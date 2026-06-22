@@ -26,16 +26,15 @@ class BookCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Área da Imagem com o componente padrão do Flutter
+          // Área da Imagem configurada para carregar os assets locais
           ClipRRect(
             borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
             child: SizedBox(
               height: 180,
               width: double.infinity,
-              child: Image.network(
+              child: Image.asset(
                 book.imageUrl,
-                fit: Alignment.center == Alignment.center ? BoxFit.cover : BoxFit.cover,
-                // Tratamento correto exigido pelo exercício
+                fit: BoxFit.cover,
                 errorBuilder: (context, error, stackTrace) {
                   return Container(
                     color: Colors.grey[200],

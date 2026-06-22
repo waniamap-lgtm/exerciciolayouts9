@@ -1,26 +1,26 @@
 class BookService {
-  // Simula a busca de dados brutos (como se estivesse vindo de uma API ou Banco de Dados)
   List<Map<String, dynamic>> fetchRawBooks() {
     return [
       {
         'title': 'Crime e Castigo',
         'author': 'Fiódor Dostoiévski',
-        'imageUrl': 'https://images-na.ssl-images-amazon.com/images/I/71wDb9997XL.jpg', 
+        'imageUrl': 'assets/im_crime.jpg',
       },
       {
         'title': 'O Olho Mais Azul',
         'author': 'Toni Morrison',
-        'imageUrl': 'LINK_QUEBRADO_TESTE', // Link inválido propositalmente para o teste
+        // Mantido inválido de propósito para testar a caixinha cinza de erro
+        'imageUrl': 'LINK_INVALIDO_PROPOSITAL',
       },
       {
         'title': 'Frankenstein',
         'author': 'Mary Shelley',
-        'imageUrl': 'https://images-na.ssl-images-amazon.com/images/I/81bcM4N+g9L.jpg',
+        'imageUrl': 'assets/im_frank.jpg',
       },
       {
         'title': 'O Médico e o Monstro',
         'author': 'Robert Louis Stevenson',
-        'imageUrl': 'https://images-na.ssl-images-amazon.com/images/I/817290mbyvL.jpg',
+        'imageUrl': 'assets/im_medico.jpg',
       },
     ];
   }
